@@ -3,7 +3,7 @@ Just an initial basic experiment with WebGL and Three.js.
 
 The fun stuff is all together in /js/prism-cube but in the /js/elements folder you can find separate files with more notes on each aspect.
 
-Thanks to the [Three.js](https://threejs.org/) and the Sonar Systems [Three.js tutorials](https://www.youtube.com/playlist?list=PLRtjMdoYXLf6mvjCmrltvsD0j12ZQDMfE) for the inspiration to get started.
+Thanks to the [Three.js](https://threejs.org/) documentation and examples as well as the Sonar Systems [Three.js tutorials](https://www.youtube.com/playlist?list=PLRtjMdoYXLf6mvjCmrltvsD0j12ZQDMfE) for the inspiration to get started.
 
 To have a look, in your terminal;
 - `git clone https://github.com/Gingertonic/threejs-experiments.git`
