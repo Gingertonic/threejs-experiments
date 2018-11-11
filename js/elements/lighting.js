@@ -1,4 +1,4 @@
-//NB: materials must be of one of types: Phong (gloss) / Lambert (matte)
+//NB: materials must be of one of types: Phong (gloss) / Lambert (matte) to be affected by light
 
 // create new AmbientLight(colour, intensity)
 const ambientLight = new THREE.AmbientLight(0xFFF7e2, 1)
