@@ -10,6 +10,7 @@
 	</head>
 	<body>
 		<script src="js/three.min.js"></script>
+    <script src= "js/OrbitControls.js"></script>
 		<script>
 			const scene = new THREE.Scene();
 
@@ -43,6 +44,9 @@
 
       // place the camera
       camera.position.z = 5;
+
+      // controls
+      const controls = new THREE.OrbitControls(camera, renderer.domElement)
 
       // action to happen in scene refresh
       const update = () => {
