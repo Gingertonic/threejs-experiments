@@ -20,12 +20,20 @@
       renderer.setSize(window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
 
+      // handle window resizes
+      window.addEventListener('resize', function(){
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        camera.aspect = window.innerWidth / window.innerHeight
+        camera.updateProjectionMatrix()
+      })
+
       // define item shape - width, depth, height
-      const geometry = new THREE.BoxGeometry( 1, 2, 1 );
+      const geometry = new THREE.BoxGeometry( 1, 1, 1 );
       // define item material
-      const material = new THREE.MeshBasicMaterial( { color: 0x00ff00, wireframe: false } );
+      const material = new THREE.MeshBasicMaterial( { color: 0x00ff00, wireframe: true } );
       // put them together to create a green cube
       const cube = new THREE.Mesh( geometry, material );
+      cube.rotation.x = 0;
       // add the cube to the scene
       scene.add( cube );
 
@@ -39,7 +47,6 @@
       // action to happen in scene refresh
       const update = () => {
         // cube rotation
-        cube.rotation.x += 0.01;
         cube.rotation.y -= 0.01;
       }
 
